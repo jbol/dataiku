@@ -39,11 +39,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686661022825,
+    "lastModifiedOn": 1686661025795,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -56,12 +56,26 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "55b2a3be6995c3a7fe0bd45099446f4efe09fb4ffd2b0d8426fcc3b65dea94a3",
     "files": [
       "/customer_dbase_finantial.xlsx"
     ],
-    "uploadConnection": "dataiku-managed-storage",
     "uploadFSProviderType": "S3",
+    "uploadedConfig": {
+      "bucket": "gis-data-eu-west-3",
+      "metastoreSynchronizationEnabled": true,
+      "metastoreDatabaseName": "default",
+      "metastoreTableName": "${projectKey}_customer_dbase_finantial",
+      "connection": "dataiku-managed-storage",
+      "path": "/managed-dss-data/uploads/${projectKey}/customer_dbase_finantial",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "dataiku-managed-storage",
     "notReadyIfEmpty": false,
     "previewFile": "/customer_dbase_finantial.xlsx",
     "filesSelectionRules": {
