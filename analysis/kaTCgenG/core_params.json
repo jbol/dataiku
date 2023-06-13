@@ -1,12 +1,70 @@
 {
   "inputDatasetSmartName": "stacked_joined",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "ColumnRenamer",
+        "params": {
+          "renamings": [
+            {
+              "from": "ed",
+              "to": "yearsofeducation"
+            }
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "ID_CUST": 120,
+      "region": 100,
+      "townsize": 113,
+      "gender": 100,
+      "age": 100,
+      "agecat": 100,
+      "birthmonth": 100,
+      "ed": 100,
+      "edcat": 211,
+      "jobcat": 274,
+      "union": 100,
+      "employ": 100,
+      "empcat": 100,
+      "income": 100,
+      "inccat": 100,
+      "original_dataset": 260,
+      "debtinc": 134,
+      "creddebt": 148,
+      "lncreddebt": 155,
+      "othdebt": 148,
+      "lnothdebt": 155,
+      "default": 100,
+      "homeown": 100,
+      "hometype": 162,
+      "reason": 100,
+      "card": 127,
+      "cardtype": 100,
+      "cardbenefit": 127,
+      "cardfee": 100,
+      "cardtenure": 100,
+      "cardtenurecat": 141,
+      "card2": 127,
+      "card2type": 100,
+      "card2benefit": 105,
+      "card2fee": 100,
+      "card2tenure": 100,
+      "card2tenurecat": 148,
+      "carditems": 100,
+      "cardspent": 134,
+      "card2items": 100,
+      "card2spent": 134
+    },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -61,7 +119,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -69,11 +129,11 @@
   "charts": [],
   "name": "Analyze stacked_joined",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686662773963,
+    "lastModifiedOn": 1686662917234,
     "extendedProperties": {}
   },
   "creationTag": {
