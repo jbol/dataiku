@@ -1,0 +1,187 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "featureGroup": false,
+  "formatType": "excel",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "xlsx": true,
+    "preserveNumberFormatting": false,
+    "parseDatesToISO": false,
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "sheets": "*customer_dbase_financial"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jkbolorinos@student.ie.edu"
+    },
+    "lastModifiedOn": 1686661022825,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jkbolorinos@student.ie.edu"
+    },
+    "lastModifiedOn": 1686661022825,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "uploadBoxId": "55b2a3be6995c3a7fe0bd45099446f4efe09fb4ffd2b0d8426fcc3b65dea94a3",
+    "files": [
+      "/customer_dbase_finantial.xlsx"
+    ],
+    "uploadConnection": "dataiku-managed-storage",
+    "uploadFSProviderType": "S3",
+    "notReadyIfEmpty": false,
+    "previewFile": "/customer_dbase_finantial.xlsx",
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"custid","type":"string"},
+      {"name":"debtinc","type":"string"},
+      {"name":"creddebt","type":"string"},
+      {"name":"lncreddebt","type":"string"},
+      {"name":"othdebt","type":"string"},
+      {"name":"lnothdebt","type":"string"},
+      {"name":"default","type":"string"},
+      {"name":"homeown","type":"string"},
+      {"name":"hometype","type":"string"},
+      {"name":"reason","type":"string"},
+      {"name":"card","type":"string"},
+      {"name":"cardtype","type":"string"},
+      {"name":"cardbenefit","type":"string"},
+      {"name":"cardfee","type":"string"},
+      {"name":"cardtenure","type":"string"},
+      {"name":"cardtenurecat","type":"string"},
+      {"name":"card2","type":"string"},
+      {"name":"card2type","type":"string"},
+      {"name":"card2benefit","type":"string"},
+      {"name":"card2fee","type":"string"},
+      {"name":"card2tenure","type":"string"},
+      {"name":"card2tenurecat","type":"string"},
+      {"name":"carditems","type":"string"},
+      {"name":"cardspent","type":"string"},
+      {"name":"card2items","type":"string"},
+      {"name":"card2spent","type":"string"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
