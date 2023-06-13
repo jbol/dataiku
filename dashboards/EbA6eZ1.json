@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "goswvij",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "jkbolorinos@student.ie.edu",
+  "listed": true,
+  "name": "DataManipulation12023\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jkbolorinos@student.ie.edu"
+    },
+    "lastModifiedOn": 1686660821642,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jkbolorinos@student.ie.edu"
+    },
+    "lastModifiedOn": 1686660821642,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
