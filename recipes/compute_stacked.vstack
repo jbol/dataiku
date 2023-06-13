@@ -1,6 +1,24 @@
 {
-  "mode": "UNION",
+  "mode": "REMAP",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "ID_CUST",
+    "region",
+    "townsize",
+    "gender",
+    "age",
+    "agecat",
+    "birthmonth",
+    "ed",
+    "edcat",
+    "jobcat",
+    "union",
+    "employ",
+    "empcat",
+    "income",
+    "inccat",
+    "ID_CUSTOMER"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -42,7 +60,25 @@
         "enabled": false
       },
       "originLabel": "ACTIVE_customer_dbase_demographics",
-      "index": 0
+      "index": 0,
+      "columnsMatch": [
+        "ID_CUST",
+        "region",
+        "townsize",
+        "gender",
+        "age",
+        "agecat",
+        "birthmonth",
+        "ed",
+        "edcat",
+        "jobcat",
+        "union",
+        "employ",
+        "empcat",
+        "income",
+        "inccat",
+        ""
+      ]
     },
     {
       "preFilter": {
@@ -50,12 +86,106 @@
         "enabled": false
       },
       "originLabel": "RETIRED_customer_dbase_demographics",
-      "index": 1
+      "index": 1,
+      "columnsMatch": [
+        "ID_CUSTOMER",
+        "region",
+        "townsize",
+        "gender",
+        "age",
+        "agecat",
+        "birthmonth",
+        "ed",
+        "edcat",
+        "jobcat",
+        "union",
+        "",
+        "",
+        "income",
+        "inccat",
+        ""
+      ]
     }
   ],
+  "copySchemaFromDatasetWithName": "ACTIVE_customer_dbase_demographics",
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "ID_CUST",
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "townsize",
+            "type": "string"
+          },
+          {
+            "name": "gender",
+            "type": "string"
+          },
+          {
+            "name": "age",
+            "type": "bigint"
+          },
+          {
+            "name": "agecat",
+            "type": "string"
+          },
+          {
+            "name": "birthmonth",
+            "type": "string"
+          },
+          {
+            "name": "ed",
+            "type": "bigint"
+          },
+          {
+            "name": "edcat",
+            "type": "string"
+          },
+          {
+            "name": "jobcat",
+            "type": "string"
+          },
+          {
+            "name": "union",
+            "type": "boolean"
+          },
+          {
+            "name": "employ",
+            "type": "bigint"
+          },
+          {
+            "name": "empcat",
+            "type": "string"
+          },
+          {
+            "name": "income",
+            "type": "bigint"
+          },
+          {
+            "name": "inccat",
+            "type": "string"
+          },
+          {
+            "name": "ID_CUSTOMER",
+            "type": "string"
+          },
+          {
+            "name": "original_dataset",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
