@@ -16,6 +16,20 @@
         "preview": false,
         "disabled": false,
         "alwaysShowComment": false
+      },
+      {
+        "type": "FillEmptyWithValue",
+        "params": {
+          "value": "empcat",
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "employ"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
       }
     ],
     "maxProcessedMemTableBytes": -1,
@@ -63,7 +77,8 @@
       "carditems": 100,
       "cardspent": 134,
       "card2items": 100,
-      "card2spent": 134
+      "card2spent": 134,
+      "yearsofeducation": 135
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -343,6 +358,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -507,6 +523,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -547,11 +564,11 @@
   ],
   "name": "Analyze stacked_joined",
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686663284342,
+    "lastModifiedOn": 1686663441894,
     "extendedProperties": {}
   },
   "creationTag": {
