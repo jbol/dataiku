@@ -20,10 +20,11 @@
       {
         "type": "FillEmptyWithValue",
         "params": {
-          "value": "empcat",
-          "appliesTo": "SINGLE_COLUMN",
+          "value": "retired",
+          "appliesTo": "COLUMNS",
           "columns": [
-            "employ"
+            "employ",
+            "empcat"
           ]
         },
         "metaType": "PROCESSOR",
@@ -564,11 +565,11 @@
   ],
   "name": "Analyze stacked_joined",
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686663441894,
+    "lastModifiedOn": 1686663645704,
     "extendedProperties": {}
   },
   "creationTag": {
