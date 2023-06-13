@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686661741122,
+    "lastModifiedOn": 1686662053645,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -85,7 +85,8 @@
       {"name":"empcat","type":"string"},
       {"name":"income","type":"bigint"},
       {"name":"inccat","type":"string"},
-      {"name":"ID_CUSTOMER","type":"string"}
+      {"name":"ID_CUSTOMER","type":"string"},
+      {"name":"original_dataset","type":"string"}
     ],
     "userModified": true
   },
