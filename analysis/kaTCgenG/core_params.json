@@ -28,6 +28,27 @@
           ]
         },
         "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "LNincome"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "income",
+          "expression": "income/1000"
+        },
+        "metaType": "PROCESSOR",
         "preview": true,
         "disabled": false,
         "alwaysShowComment": false
@@ -565,11 +586,11 @@
   ],
   "name": "Analyze stacked_joined",
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686663645704,
+    "lastModifiedOn": 1686663941020,
     "extendedProperties": {}
   },
   "creationTag": {
