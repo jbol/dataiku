@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686662287428,
+    "lastModifiedOn": 1686662510005,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -85,9 +85,7 @@
       {"name":"empcat","type":"string"},
       {"name":"income","type":"bigint"},
       {"name":"inccat","type":"string"},
-      {"name":"ID_CUSTOMER","type":"string"},
       {"name":"original_dataset","type":"string"},
-      {"name":"custid","type":"string"},
       {"name":"debtinc","type":"string"},
       {"name":"creddebt","type":"string"},
       {"name":"lncreddebt","type":"string"},
