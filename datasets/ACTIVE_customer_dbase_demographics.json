@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686661072981,
+    "lastModifiedOn": 1686661073285,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -77,12 +77,26 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "55b2a3be6995c3a7fe0bd45099446f4efe09fb4ffd2b0d8426fcc3b65dea94a3",
     "files": [
       "/ACTIVE_customer_dbase_demographics.csv"
     ],
-    "uploadConnection": "dataiku-managed-storage",
     "uploadFSProviderType": "S3",
+    "uploadedConfig": {
+      "bucket": "gis-data-eu-west-3",
+      "metastoreSynchronizationEnabled": true,
+      "metastoreDatabaseName": "default",
+      "metastoreTableName": "${projectKey}_ACTIVE_customer_dbase_demographics",
+      "connection": "dataiku-managed-storage",
+      "path": "/managed-dss-data/uploads/${projectKey}/ACTIVE_customer_dbase_demographics",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "dataiku-managed-storage",
     "notReadyIfEmpty": false,
     "previewFile": "/ACTIVE_customer_dbase_demographics.csv",
     "filesSelectionRules": {
