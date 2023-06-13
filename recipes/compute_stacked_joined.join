@@ -6,180 +6,226 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "ID_CUST",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "custid",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "ID_CUST",
+      "type": "string",
       "table": 0
     },
     {
       "name": "region",
+      "type": "string",
       "table": 0
     },
     {
       "name": "townsize",
+      "type": "string",
       "table": 0
     },
     {
       "name": "gender",
+      "type": "string",
       "table": 0
     },
     {
       "name": "age",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "agecat",
+      "type": "string",
       "table": 0
     },
     {
       "name": "birthmonth",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ed",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "edcat",
+      "type": "string",
       "table": 0
     },
     {
       "name": "jobcat",
+      "type": "string",
       "table": 0
     },
     {
       "name": "union",
+      "type": "boolean",
       "table": 0
     },
     {
       "name": "employ",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "empcat",
+      "type": "string",
       "table": 0
     },
     {
       "name": "income",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "inccat",
-      "table": 0
-    },
-    {
-      "name": "ID_CUSTOMER",
+      "type": "string",
       "table": 0
     },
     {
       "name": "original_dataset",
+      "type": "string",
       "table": 0
     },
     {
-      "name": "custid",
-      "table": 1
-    },
-    {
       "name": "debtinc",
+      "type": "string",
       "table": 1
     },
     {
       "name": "creddebt",
+      "type": "string",
       "table": 1
     },
     {
       "name": "lncreddebt",
+      "type": "string",
       "table": 1
     },
     {
       "name": "othdebt",
+      "type": "string",
       "table": 1
     },
     {
       "name": "lnothdebt",
+      "type": "string",
       "table": 1
     },
     {
       "name": "default",
+      "type": "string",
       "table": 1
     },
     {
       "name": "homeown",
+      "type": "string",
       "table": 1
     },
     {
       "name": "hometype",
+      "type": "string",
       "table": 1
     },
     {
       "name": "reason",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card",
+      "type": "string",
       "table": 1
     },
     {
       "name": "cardtype",
+      "type": "string",
       "table": 1
     },
     {
       "name": "cardbenefit",
+      "type": "string",
       "table": 1
     },
     {
       "name": "cardfee",
+      "type": "string",
       "table": 1
     },
     {
       "name": "cardtenure",
+      "type": "string",
       "table": 1
     },
     {
       "name": "cardtenurecat",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2type",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2benefit",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2fee",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2tenure",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2tenurecat",
+      "type": "string",
       "table": 1
     },
     {
       "name": "carditems",
+      "type": "string",
       "table": 1
     },
     {
       "name": "cardspent",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2items",
+      "type": "string",
       "table": 1
     },
     {
       "name": "card2spent",
+      "type": "string",
       "table": 1
     }
   ],
@@ -220,7 +266,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -230,7 +276,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -240,5 +286,179 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "ID_CUST",
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "townsize",
+            "type": "string"
+          },
+          {
+            "name": "gender",
+            "type": "string"
+          },
+          {
+            "name": "age",
+            "type": "bigint"
+          },
+          {
+            "name": "agecat",
+            "type": "string"
+          },
+          {
+            "name": "birthmonth",
+            "type": "string"
+          },
+          {
+            "name": "ed",
+            "type": "bigint"
+          },
+          {
+            "name": "edcat",
+            "type": "string"
+          },
+          {
+            "name": "jobcat",
+            "type": "string"
+          },
+          {
+            "name": "union",
+            "type": "boolean"
+          },
+          {
+            "name": "employ",
+            "type": "bigint"
+          },
+          {
+            "name": "empcat",
+            "type": "string"
+          },
+          {
+            "name": "income",
+            "type": "bigint"
+          },
+          {
+            "name": "inccat",
+            "type": "string"
+          },
+          {
+            "name": "original_dataset",
+            "type": "string"
+          },
+          {
+            "name": "debtinc",
+            "type": "string"
+          },
+          {
+            "name": "creddebt",
+            "type": "string"
+          },
+          {
+            "name": "lncreddebt",
+            "type": "string"
+          },
+          {
+            "name": "othdebt",
+            "type": "string"
+          },
+          {
+            "name": "lnothdebt",
+            "type": "string"
+          },
+          {
+            "name": "default",
+            "type": "string"
+          },
+          {
+            "name": "homeown",
+            "type": "string"
+          },
+          {
+            "name": "hometype",
+            "type": "string"
+          },
+          {
+            "name": "reason",
+            "type": "string"
+          },
+          {
+            "name": "card",
+            "type": "string"
+          },
+          {
+            "name": "cardtype",
+            "type": "string"
+          },
+          {
+            "name": "cardbenefit",
+            "type": "string"
+          },
+          {
+            "name": "cardfee",
+            "type": "string"
+          },
+          {
+            "name": "cardtenure",
+            "type": "string"
+          },
+          {
+            "name": "cardtenurecat",
+            "type": "string"
+          },
+          {
+            "name": "card2",
+            "type": "string"
+          },
+          {
+            "name": "card2type",
+            "type": "string"
+          },
+          {
+            "name": "card2benefit",
+            "type": "string"
+          },
+          {
+            "name": "card2fee",
+            "type": "string"
+          },
+          {
+            "name": "card2tenure",
+            "type": "string"
+          },
+          {
+            "name": "card2tenurecat",
+            "type": "string"
+          },
+          {
+            "name": "carditems",
+            "type": "string"
+          },
+          {
+            "name": "cardspent",
+            "type": "string"
+          },
+          {
+            "name": "card2items",
+            "type": "string"
+          },
+          {
+            "name": "card2spent",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
