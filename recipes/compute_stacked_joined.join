@@ -1,0 +1,244 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "ID_CUST",
+      "table": 0
+    },
+    {
+      "name": "region",
+      "table": 0
+    },
+    {
+      "name": "townsize",
+      "table": 0
+    },
+    {
+      "name": "gender",
+      "table": 0
+    },
+    {
+      "name": "age",
+      "table": 0
+    },
+    {
+      "name": "agecat",
+      "table": 0
+    },
+    {
+      "name": "birthmonth",
+      "table": 0
+    },
+    {
+      "name": "ed",
+      "table": 0
+    },
+    {
+      "name": "edcat",
+      "table": 0
+    },
+    {
+      "name": "jobcat",
+      "table": 0
+    },
+    {
+      "name": "union",
+      "table": 0
+    },
+    {
+      "name": "employ",
+      "table": 0
+    },
+    {
+      "name": "empcat",
+      "table": 0
+    },
+    {
+      "name": "income",
+      "table": 0
+    },
+    {
+      "name": "inccat",
+      "table": 0
+    },
+    {
+      "name": "ID_CUSTOMER",
+      "table": 0
+    },
+    {
+      "name": "original_dataset",
+      "table": 0
+    },
+    {
+      "name": "custid",
+      "table": 1
+    },
+    {
+      "name": "debtinc",
+      "table": 1
+    },
+    {
+      "name": "creddebt",
+      "table": 1
+    },
+    {
+      "name": "lncreddebt",
+      "table": 1
+    },
+    {
+      "name": "othdebt",
+      "table": 1
+    },
+    {
+      "name": "lnothdebt",
+      "table": 1
+    },
+    {
+      "name": "default",
+      "table": 1
+    },
+    {
+      "name": "homeown",
+      "table": 1
+    },
+    {
+      "name": "hometype",
+      "table": 1
+    },
+    {
+      "name": "reason",
+      "table": 1
+    },
+    {
+      "name": "card",
+      "table": 1
+    },
+    {
+      "name": "cardtype",
+      "table": 1
+    },
+    {
+      "name": "cardbenefit",
+      "table": 1
+    },
+    {
+      "name": "cardfee",
+      "table": 1
+    },
+    {
+      "name": "cardtenure",
+      "table": 1
+    },
+    {
+      "name": "cardtenurecat",
+      "table": 1
+    },
+    {
+      "name": "card2",
+      "table": 1
+    },
+    {
+      "name": "card2type",
+      "table": 1
+    },
+    {
+      "name": "card2benefit",
+      "table": 1
+    },
+    {
+      "name": "card2fee",
+      "table": 1
+    },
+    {
+      "name": "card2tenure",
+      "table": 1
+    },
+    {
+      "name": "card2tenurecat",
+      "table": 1
+    },
+    {
+      "name": "carditems",
+      "table": 1
+    },
+    {
+      "name": "cardspent",
+      "table": 1
+    },
+    {
+      "name": "card2items",
+      "table": 1
+    },
+    {
+      "name": "card2spent",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "stacked",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "customer_dbase_finantial",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
