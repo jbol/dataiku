@@ -35,7 +35,8 @@
       {
         "type": "CreateColumnWithGREL",
         "params": {
-          "column": "LNincome"
+          "column": "income",
+          "expression": "income/1000"
         },
         "metaType": "PROCESSOR",
         "preview": false,
@@ -45,8 +46,8 @@
       {
         "type": "CreateColumnWithGREL",
         "params": {
-          "column": "income",
-          "expression": "income/1000"
+          "column": "newcolumn_expression",
+          "expression": "ln(income)"
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -100,7 +101,9 @@
       "cardspent": 134,
       "card2items": 100,
       "card2spent": 134,
-      "yearsofeducation": 135
+      "yearsofeducation": 135,
+      "LNincome": 141,
+      "newcolumn_expression": 190
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -586,11 +589,11 @@
   ],
   "name": "Analyze stacked_joined",
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1686663941020,
+    "lastModifiedOn": 1686664093680,
     "extendedProperties": {}
   },
   "creationTag": {
