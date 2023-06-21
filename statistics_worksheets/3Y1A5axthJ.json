@@ -29,16 +29,386 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "income",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "agecat",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "edcat",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "jobcat",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "agecat",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "agecat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "TaslhWX"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "agecat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "iL5KfRq"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "agecat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "QQHKLAp"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "agecat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3eZKThP"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "agecat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "EtFjvmM"
+              }
+            ],
+            "id": "OM86A3g"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "edcat",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "edcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "lEUILV3"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "edcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "LqNsBSh"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "edcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tsly3C5"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "edcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "uvEP0BS"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "edcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "eUEEFEp"
+              }
+            ],
+            "id": "lwzZSVP"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "jobcat",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "jobcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "5N7Yjy5"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "jobcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ju6ahMG"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "jobcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "K4NUjYE"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "jobcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3nWMqHS"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "jobcat",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "POrjf12"
+              }
+            ],
+            "id": "NadZ92P"
+          }
+        ],
+        "id": "mSC8GYK"
+      }
+    ],
     "id": "a6nZhWU"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1687344510974,
+    "lastModifiedOn": 1687344605567,
     "extendedProperties": {}
   },
   "creationTag": {
