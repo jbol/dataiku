@@ -29,6 +29,27 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
+    "highlightFilter": {
+      "type": "and",
+      "filters": [
+        {
+          "type": "anum",
+          "column": "edcat",
+          "values": [
+            "Did not complete high school"
+          ],
+          "name": "edcat: Did not complete high school"
+        },
+        {
+          "type": "interval",
+          "column": "income",
+          "closed": "LEFT",
+          "left": 0.0,
+          "right": 2.4E8,
+          "name": "income: [0,240000000)"
+        }
+      ]
+    },
     "cards": [
       {
         "type": "bivariate_header",
@@ -82,6 +103,27 @@
               },
               {
                 "type": "bivariate_histogram",
+                "highlightFilter": {
+                  "type": "and",
+                  "filters": [
+                    {
+                      "type": "anum",
+                      "column": "edcat",
+                      "values": [
+                        "Did not complete high school"
+                      ],
+                      "name": "edcat: Did not complete high school"
+                    },
+                    {
+                      "type": "interval",
+                      "column": "income",
+                      "closed": "LEFT",
+                      "left": 0.0,
+                      "right": 2.4E8,
+                      "name": "income: [0,240000000)"
+                    }
+                  ]
+                },
                 "xBinningMode": "AUTO",
                 "yBinningMode": "AUTO",
                 "maxValuesX": 5,
@@ -102,6 +144,27 @@
               },
               {
                 "type": "mosaic_plot",
+                "highlightFilter": {
+                  "type": "and",
+                  "filters": [
+                    {
+                      "type": "anum",
+                      "column": "edcat",
+                      "values": [
+                        "Did not complete high school"
+                      ],
+                      "name": "edcat: Did not complete high school"
+                    },
+                    {
+                      "type": "interval",
+                      "column": "income",
+                      "closed": "LEFT",
+                      "left": 0.0,
+                      "right": 2.4E8,
+                      "name": "income: [0,240000000)"
+                    }
+                  ]
+                },
                 "xBinningMode": "AUTO",
                 "yBinningMode": "AUTO",
                 "maxValuesX": 5,
@@ -195,6 +258,27 @@
               },
               {
                 "type": "bivariate_histogram",
+                "highlightFilter": {
+                  "type": "and",
+                  "filters": [
+                    {
+                      "type": "anum",
+                      "column": "edcat",
+                      "values": [
+                        "Did not complete high school"
+                      ],
+                      "name": "edcat: Did not complete high school"
+                    },
+                    {
+                      "type": "interval",
+                      "column": "income",
+                      "closed": "LEFT",
+                      "left": 0.0,
+                      "right": 2.4E8,
+                      "name": "income: [0,240000000)"
+                    }
+                  ]
+                },
                 "xBinningMode": "AUTO",
                 "yBinningMode": "AUTO",
                 "maxValuesX": 5,
@@ -215,6 +299,27 @@
               },
               {
                 "type": "mosaic_plot",
+                "highlightFilter": {
+                  "type": "and",
+                  "filters": [
+                    {
+                      "type": "anum",
+                      "column": "edcat",
+                      "values": [
+                        "Did not complete high school"
+                      ],
+                      "name": "edcat: Did not complete high school"
+                    },
+                    {
+                      "type": "interval",
+                      "column": "income",
+                      "closed": "LEFT",
+                      "left": 0.0,
+                      "right": 2.4E8,
+                      "name": "income: [0,240000000)"
+                    }
+                  ]
+                },
                 "xBinningMode": "AUTO",
                 "yBinningMode": "AUTO",
                 "maxValuesX": 5,
@@ -308,6 +413,27 @@
               },
               {
                 "type": "bivariate_histogram",
+                "highlightFilter": {
+                  "type": "and",
+                  "filters": [
+                    {
+                      "type": "anum",
+                      "column": "edcat",
+                      "values": [
+                        "Did not complete high school"
+                      ],
+                      "name": "edcat: Did not complete high school"
+                    },
+                    {
+                      "type": "interval",
+                      "column": "income",
+                      "closed": "LEFT",
+                      "left": 0.0,
+                      "right": 2.4E8,
+                      "name": "income: [0,240000000)"
+                    }
+                  ]
+                },
                 "xBinningMode": "AUTO",
                 "yBinningMode": "AUTO",
                 "maxValuesX": 5,
@@ -328,6 +454,27 @@
               },
               {
                 "type": "mosaic_plot",
+                "highlightFilter": {
+                  "type": "and",
+                  "filters": [
+                    {
+                      "type": "anum",
+                      "column": "edcat",
+                      "values": [
+                        "Did not complete high school"
+                      ],
+                      "name": "edcat: Did not complete high school"
+                    },
+                    {
+                      "type": "interval",
+                      "column": "income",
+                      "closed": "LEFT",
+                      "left": 0.0,
+                      "right": 2.4E8,
+                      "name": "income: [0,240000000)"
+                    }
+                  ]
+                },
                 "xBinningMode": "AUTO",
                 "yBinningMode": "AUTO",
                 "maxValuesX": 5,
@@ -404,11 +551,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "jkbolorinos@student.ie.edu"
     },
-    "lastModifiedOn": 1687344605567,
+    "lastModifiedOn": 1687344942645,
     "extendedProperties": {}
   },
   "creationTag": {
